@@ -16,6 +16,7 @@ export default function Home() {
           Get started by editing <code>pages/index.js</code>
         </p>
 		<p>New paragraph of plain text added</p>
+		<a href="searchforme">A page to test the search</a>
       </main>
 
       <Footer />
