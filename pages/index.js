@@ -31,7 +31,7 @@ export default function Home() {
 		<p>New paragraph of plain text added</p>
 		<a href="searchforme">A page to test the search</a>
 
-		<form name="contact" method="POST" action="thanks" data-netlify="true">
+		<form name="contact" method="POST" action="/thanks" data-netlify="true">
 		  <input type="hidden" name="subject" value="Contact email from test netlify" />
 		  <p>
 			<label>Your Name: <input type="text" name="name" /></label>
