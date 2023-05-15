@@ -6,13 +6,13 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter page 2</title>
+        <title>Thanks</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <Header title="Another Page" />
-		<p>This is another page search for the word antelope to find it.</p>
+		<p>Thankyou for submitting your form</p>
       </main>
 
       <Footer />
