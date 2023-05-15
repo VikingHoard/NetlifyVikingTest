@@ -31,19 +31,26 @@ export default function Home() {
 		<p>New paragraph of plain text added</p>
 		<a href="searchforme">A page to test the search</a>
 
-		<form name="contact" action="thanks" netlify>
+		<form name="contact" method="POST" data-netlify="true">
 		  <p>
-			<label>Name <input type="text" name="name" /></label>
+			<label>Your Name: <input type="text" name="name" /></label>
 		  </p>
 		  <p>
-			<label>Email <input type="email" name="email" /></label>
+			<label>Your Email: <input type="email" name="email" /></label>
 		  </p>
-		   <textarea name="message"cols="30" rows="10" placeholder="Your Message"></textarea>
+		  <p>
+			<label>Your Role: <select name="role[]" multiple>
+			  <option value="leader">Leader</option>
+			  <option value="follower">Follower</option>
+			</select></label>
+		  </p>
+		  <p>
+			<label>Message: <textarea name="message"></textarea></label>
+		  </p>
 		  <p>
 			<button type="submit">Send</button>
 		  </p>
 		</form>
-
       </main>
 
       <Footer />
