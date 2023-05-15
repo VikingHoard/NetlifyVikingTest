@@ -15,43 +15,36 @@ const search = instantsearch({
 
 
 export default function Home() {
-	search.addWidgets([
-  instantsearch.widgets.searchBox({
-    container: '#searchbox',
-  }),
-
-  instantsearch.widgets.hits({
-    container: '#hits',
-  })
-]);
-
-search.start();
   return (
 	<div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Testbed</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 	
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Testbed" />
 
 		<p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
 		<p>New paragraph of plain text added</p>
 		<a href="searchforme">A page to test the search</a>
-      
-	  <p>Test Contact Form</p>
-	  
-	<form name="contact" action="/thanks" netlify>
-    <input type="text" name='name' placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message"cols="30" rows="10" placeholder="Your Message"></textarea>
-    <button type="submit">Send</button>
-	</form>
-	  
-	  </main>
+
+		<form name="contact" action="thanks" netlify>
+		  <p>
+			<label>Name <input type="text" name="name" /></label>
+		  </p>
+		  <p>
+			<label>Email <input type="email" name="email" /></label>
+		  </p>
+		   <textarea name="message"cols="30" rows="10" placeholder="Your Message"></textarea>
+		  <p>
+			<button type="submit">Send</button>
+		  </p>
+		</form>
+
+      </main>
 
       <Footer />
     </div>

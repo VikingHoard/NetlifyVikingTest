@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
-export default function Home() {
+export default function Thanks() {
   return (
     <div className="container">
       <Head>
@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Another Page" />
+        <Header title="Thankyou" />
 		<p>Thankyou for submitting your form</p>
       </main>
 
